@@ -32,10 +32,11 @@
     >
     
     <Marker
-    bind:lngLat={boundPos}
-    on:dragend={handleMove}
-    on:dragstart={() => displayWeather = false}
+      bind:lngLat={boundPos}
+      on:dragend={handleMove}
+      on:dragstart={() => displayWeather = false}
       draggable
+      class="flex flex-col justify-center items-center"
     >
       <span class="border-gray-200 border shadow-2xl focus:outline-2 focus:outline-black w-fit h-fit px-3 bg-red-300 text-black rounded-full grid place-items-center"> {place} </span>
       <img src={geoPin} alt="geo pin">
